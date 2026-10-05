@@ -357,7 +357,7 @@ def main() -> int:
         except (urllib.error.URLError, RuntimeError) as exc:
             raise SystemExit(f"GitHub data request failed: {exc}. Use --demo for an offline preview.")
     ASSETS.mkdir(exist_ok=True)
-    (ASSETS / "identity.svg").write_text(identity_svg(cfg), encoding="utf-8")
+    (ASSETS / "identity-emblem.svg").write_text(identity_svg(cfg), encoding="utf-8")
     (ASSETS / "contributions.svg").write_text(contributions_svg(cfg, contribution), encoding="utf-8")
     (ASSETS / "signal.svg").write_text(signal_svg(cfg, profile, contribution), encoding="utf-8")
     print(f"Generated Aqua Launch assets for @{username}")
@@ -366,4 +366,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
