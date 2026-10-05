@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/identity.svg" width="900" alt="Kiarash animated ASCII identity" />
+<img src="./assets/identity.svg?v=2" width="900" alt="Kiarash animated ASCII identity" />
 
 <br><br>
 
@@ -21,3 +21,4 @@
 <sub>We are not alike.</sub>
 
 </div>
+
